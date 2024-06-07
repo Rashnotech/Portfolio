@@ -1,7 +1,15 @@
+import About from "../components/content/about"
+import Main from "../components/content/hero"
+import Footer from "../components/footer/footer"
+import Header from "../components/header/header"
+
 const Home = () => {
     return (
         <>
-            <h1>Home</h1>
+            <Header />
+            <Main />
+            <About />
+            <Footer />
         </>
     )
 }

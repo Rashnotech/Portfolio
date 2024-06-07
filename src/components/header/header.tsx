@@ -1,14 +1,18 @@
-import navbar from "./nav";
+import Navbar from "./nav";
+import Addons from "./addons";
 
-const header = () => {
+const Header = () => {
     return (
         <>
-            <header>
-                <h1>Header</h1>
-                <navbar />
+            <header className="text-white font-manrope py-2 pr-3 items-center container ring-slate-50 ring-1 flex justify-between text-sm font-medium rounded-full bg-black/20 ">
+                <h1 className="font-groteck text-xl ml-6">
+                    Rashnotech
+                </h1>
+                <Navbar />
+                <Addons />
             </header>
         </>
     )
 }
 
-export default header;
+export default Header;

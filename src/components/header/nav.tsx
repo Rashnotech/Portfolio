@@ -3,7 +3,7 @@ interface url {
     path: string
 }
 
-const navbar = () => {
+const Navbar = () => {
     const navitems: url[] = [
         { name: 'Home', path: '/' },
         { name: 'Project', path: '#projects' },
@@ -14,7 +14,7 @@ const navbar = () => {
     return (
         <>
             <nav>
-                <ul>
+                <ul className="flex space-x-8">
                    { navitems.map((item, index) => (
                         <li key={index}>
                             <a href={item.path}>{item.name}</a>
@@ -27,4 +27,4 @@ const navbar = () => {
     )
 }
 
-export default navbar;
+export default Navbar;
