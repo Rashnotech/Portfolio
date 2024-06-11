@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: bold;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/Fontspring-DEMO-universo-bold.otf) format('opentype');
+}
+
+
+.form-style {
+    @apply rounded-full px-4 py-3 bg-slate-50/10 text-sm focus:outline-none text-white placeholder:text-white outline-none
+}

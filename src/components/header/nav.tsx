@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <>
             <nav>
-                <ul className="flex space-x-8">
+                <ul className="flex font-manrope space-x-8">
                    { navitems.map((item, index) => (
                         <li key={index}>
                             <a href={item.path}>{item.name}</a>
