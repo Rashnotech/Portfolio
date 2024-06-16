@@ -1,12 +1,14 @@
+import '../content/dot.css'
+
 const Blog = () => {
     return (
         <>
             <section id="blog" className="p-16 container text-white">
-                <h3 className="text-6xl font-groteck">
+                <h3 className="text-5xl md:text-6xl font-groteck">
                     My blog
                 </h3>
-                <div className="grid grid-cols-2">
-                    <button className="rounded-full bg-pink-500 font-medium mt-8 hover:bg-pink-600 px-4 w-1/3 h-12 py-2 font-manrope text-lg text-white">
+                <div className="grid grid-cols-1 md:grid-cols-2 relative">
+                    <button className="rounded-full bg-pink-500 font-medium mt-8 hover:bg-pink-600 px-4 w-1/3 h-12 py-2 font-manrope text-base md:text-lg text-white">
                         See all
                     </button>
                     <Article />

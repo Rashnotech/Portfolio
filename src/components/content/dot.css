@@ -2,6 +2,6 @@
     width: 200px;
     height: 70px;
     background-color: transparent;
-    background-image: radial-gradient(circle, #ccc 1px, transparent 4px);
-    background-size: 10px 10px;
+    background-image: radial-gradient(circle, #999 1px, transparent 2px);
+    background-size: 25px 25px;
 }

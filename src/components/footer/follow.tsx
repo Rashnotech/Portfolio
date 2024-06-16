@@ -49,9 +49,9 @@ const socials: socialProps[] = [
 const Follow = () => {
     return (
         <>
-            <section className="flex container p-16 items-center text-white justify-between">
+            <section className="flex md:flex-row flex-col container p-16 items-center text-white justify-between">
                 <h3 className="font-groteck text-6xl">Follow me</h3>
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid md:w-1/2 w-full grid-cols-4 gap-4">
                     {socials.map((item, idx) => (<Social
                             key={idx}
                             link={item.link}
