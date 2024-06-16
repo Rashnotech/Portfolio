@@ -1,5 +1,5 @@
 import './icon.css'
-import Hero from '../../assets/images/hero.png'
+import Hero from '../../assets/images/programmer.png'
 
 const Main = () => {
     return (
@@ -20,7 +20,7 @@ const Main = () => {
                 <section className="md:block hidden">
                     <img src={Hero} alt="Rashnotech" className="w-full h-full object-contain object-top" />
                 </section>
-                <div className="rounded-full absolute w-28 right-4 left-1/3 md:left-1/2 top-3/4 md:top-1/4">
+                <div className="rounded-full absolute w-28 left-1/2 top-3/4 md:top-2/4">
                     <button className="w-24 absolute rounded-full animate-ping h-24 p-4 bg-pink-500/70"></button>
                     <button className="absolute rounded-full hover:bg-pink-500/35 bg-pink-500 w-24 h-24 p-4 flex flex-col items-center">
                         <span className="tabler--cloud-download"></span>

@@ -1,24 +1,26 @@
-import { FC, MouseEvent, useState } from "react";
+import { FC, useState } from "react";
 import mega from '../../assets/images/mega.gif'
 import drug from '../../assets/images/drug.png';
 import pense from '../../assets/images/pense.png';
 import ncws from '../../assets/images/ncws.png';
+import smart from '../../assets/images/smart.gif';
 import View from "./view";
+
 
 const data = [{
     id: 1,
     title: 'MT Solutions',
     date: 'April 2024',
     image: mega,
-    description: '',
-    link: '',
+    description: "Megatech Solution is a cutting-edge digital solutions provider. We bring our clients' digital ideas to life by offering premium Website & Mobile application development services, Digital Marketing, Custom & Turn-key software creation, and IT implementation, and support.",
+    link: 'https://megatechsolutions.tech',
     open: false
 }, {
     id: 2,
     title: 'Rev Tax',
     date: 'March 2024',
     image: drug,
-    description: '',
+    description: 'RevTax is a software solution aimed atrevolutionizing revenue collection processes to combat corruption, harassment, and extortion prevalent in manual collection methods. This project leverages modern technologies and innovative approaches to streamline revenue collection, making it easy, simple, and transparent. Built with modern technologies and innovative approaches, RevTax aims to combat corruption, harassment, and extortion prevalent in manual collection methods.', 
     link: '',
     open: false
 }, {
@@ -26,22 +28,22 @@ const data = [{
     title: 'SYF',
     date: 'February 2024',
     image: drug,
-    description: '',
-    link: '',
+    description: 'Soaring Youth Foundation, we’re on a relentless mission to rescue and empower young individuals from the grip of substance abuse and addiction. Join us as we pave the way to a brighter, drug-free future.',
+    link: 'https://soaringyouthfoundation.org/',
     open: false
 }, {
     id: 4,
     title: 'Pense',
     date: 'November 2023',
     image: pense,
-    description: '',
-    link: '',
+    description: 'Pense (blog app) is intended to solve the problem of providing individuals and organisations with a platform to create, publish, and manage their written content in an organised and user-friendly manner. The project aims to simplify the process of content creation, publication, and engagement, making it easier for users to reach their target audience.',
+    link: 'https://pense-theta.vercel.app/',
     open: false
 }, {
     id: 5,
     title: 'Smart Identity',
     date: 'January 2023',
-    image: '#',
+    image: smart,
     description: '',
     link: '',
     open: false
@@ -51,7 +53,7 @@ const data = [{
     date: 'April 2022',
     image: ncws,
     description: '',
-    link: '',
+    link: 'https://ncwsnigeria.com',
     open: false
 }]
 

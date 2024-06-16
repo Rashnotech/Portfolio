@@ -11,11 +11,10 @@ const About = () => {
                 </article>
                 <article className="font-manrope md:p-8 md:w-1/2 text-sm font-medium leading-7"> 
                     <p className="my-4">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Expedita culpa optio unde 
-                        blanditiis ipsum. Doloribus molestias maiores
-                        illum vel asperiores possimus quos 
-                        dignissimos tenetur repellat eveniet. Id aspernatur rem et?
+                        I am a dedicated Fullstack Engineer. 
+                        My experience in the field enables me to effectively bridge the gap between conceptual ideas and their practical implementation using cutting-edge technologies.
+                        I am committed to staying at the forefront of the industry, consistently seeking opportunities to contribute to advancements in both AI/ML.
+                        My fervor for AI/ML technologies is evident, as I am deeply passionate about leveraging these advancements to provide innovative solutions to complex problems.
                     </p>
                     <button className="font-medium text-white hover:bg-pink-600 bg-pink-500 rounded-full px-4 py-2">
                         Contact me

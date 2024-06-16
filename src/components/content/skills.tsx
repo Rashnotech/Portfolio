@@ -2,7 +2,7 @@ const skills: string[] = [
     "CSS", "Tailwind",
     "Javascript", "TypeScript",
     "Python", "Node.js",
-    "React", "C", "DevOps",
+    "React", "C", "DevOps", "Wordpress",
     "MySQL", "Mongo", "Postgres"
 ]
 
