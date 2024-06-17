@@ -20,7 +20,7 @@ const Contact = () => {
     const handleSubmit = async (event: { preventDefault: () => void }, data: any) => {
         event?.preventDefault();
         setProcess(true);
-        const res = await fetch(`${import.meta.env.BASE_URL}/api/v1/contact`, {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/contact`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -32,14 +32,14 @@ const Contact = () => {
             toast({
                 title: res.message,
                 position: 'top-right',
-                status: res.status,
+                status: 'success',
                 isClosable: true,
             });
         } else {
             toast({
-                title: res.message,
+                title: res.error,
                 position: 'top-right',
-                status: res.status,
+                status: 'error',
                 isClosable: true
             });
         }
@@ -53,19 +53,19 @@ const Contact = () => {
                 <form onSubmit={(e) => handleSubmit(e, form)} action='' className="md:w-1/2 w-3/4 space-y-3 mx-auto  font-manrope">
                     <div className="flex flex-col">
                         <label className="text-sm ml-4 font-medium" htmlFor="fullname">Full name</label>
-                        <input name="fullname" onChange={handleChange} placeholder="Enter your full name..." type="text" className="form-style" id="" />
+                        <input required name="fullname" onChange={handleChange} placeholder="Enter your full name..." type="text" className="form-style" id="" />
                     </div>
                     <div className="flex flex-col">
                         <label className="text-sm ml-4 font-medium" htmlFor="email">Email*</label>
-                        <input onChange={handleChange} className="form-style" placeholder="Enter your email..." type="email" name="email"  id="" />
+                        <input required onChange={handleChange} className="form-style" placeholder="Enter your email..." type="email" name="email"  id="" />
                     </div>
                     <div>
                         <label className="text-sm ml-4 font-medium" htmlFor="message">Message*</label>
-                        <textarea onChange={handleChange} className="bg-slate-50/10 w-full rounded-2xl focus:outline-none p-4 placeholder:text-white text-sm" placeholder="Enter your message..." name="message" id="" cols={10} rows={4} />
+                        <textarea required onChange={handleChange} className="bg-slate-50/10 w-full rounded-2xl focus:outline-none p-4 placeholder:text-white text-sm" placeholder="Enter your message..." name="message" id="" cols={10} rows={4} />
                     </div>
                     <div className="flex items-center justify-center">
                         <button className="rounded-full hover:bg-pink-600 bg-pink-500 font-medium w-36 text-white text-lg px-4 py-2">
-                            {process && `<i className=''></i>`} Send
+                            {process ? 'processing...' : 'Send'}
                         </button>
                     </div>
                 </form>

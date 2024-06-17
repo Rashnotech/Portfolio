@@ -1,6 +1,8 @@
 import { Router } from 'express'
-import Mailer from '../controllers/Mailer'
+import Contact from '../controllers/Contact.js';
 
-const route = new Router();
+const router = Router();
 
-route.post('/api/v1/contact', Mailer.mail);
+router.post('/api/v1/contact', Contact.Sendmail);
+
+export default router;

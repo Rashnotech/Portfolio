@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import 'dotenv/config';
 
 class Mailer {
     /**
@@ -12,18 +13,18 @@ class Mailer {
          */
         const transporter = nodemailer.createTransport(
             {
-                host: config.server.host,
-                port: config.server.port,
+                host: process.env.HOST,
+                port: process.env.POST,
                 secure: true,
                 auth: {
-                    user: config.server.user,
-                    pass: config.server.pass
+                    user: process.env.USER,
+                    pass: process.env.PASS
                 }
             }
         );
         const options = {
-            from: 'Rashnotech',
-            to: email,
+            from: email,
+            to: 'rashnotech@gmail.com',
             subject: message.title,
             html: message.body
         }
@@ -34,3 +35,5 @@ class Mailer {
         return {error: 'Failed to send email'};
     }
 }
+
+export default Mailer;
