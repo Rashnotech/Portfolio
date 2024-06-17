@@ -16,9 +16,9 @@ const About = () => {
                         I am committed to staying at the forefront of the industry, consistently seeking opportunities to contribute to advancements in both AI/ML.
                         My fervor for AI/ML technologies is evident, as I am deeply passionate about leveraging these advancements to provide innovative solutions to complex problems.
                     </p>
-                    <button className="font-medium text-white hover:bg-pink-600 bg-pink-500 rounded-full px-4 py-2">
+                    <a href='#contact' className="font-medium text-white hover:bg-pink-600 bg-pink-500 rounded-full px-4 py-2">
                         Contact me
-                    </button>
+                    </a>
                 </article>
                 <h3 className="font-groteck text-5xl md:text-6xl absolute -top-10">
                     About me 

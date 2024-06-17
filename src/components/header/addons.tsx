@@ -5,11 +5,11 @@ const Addons = () => {
         <>
             <nav className="flex items-center space-x-4">
                 <span className="font-manrope text-xs">Dark</span>
-                <Switch colorScheme="pink" size="md" />
+                <Switch colorScheme="pink" size="sm" />
                 <span className="font-manrope text-xs">Light</span>
-                <button className="rounded-full px-6 py-2 bg-slate-50/10">
+                <a href="#contact" className="rounded-full px-6 py-2 hover:bg-black/75 bg-slate-50/10">
                     Contact me
-                </button>
+                </a>
             </nav>
         </>
     )

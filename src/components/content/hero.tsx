@@ -1,7 +1,24 @@
 import './icon.css'
 import Hero from '../../assets/images/programmer.png'
+import Rashnotech from '../../assets/Rashnotech.pdf'
 
 const Main = () => {
+
+    const downloadResume = () => {
+        /*
+        const resume = Rashnotech;
+        
+        const blob = new Blob([resume], {type: 'application/pdf'});
+        const url = URL.createObjectURL(blob);
+        */
+        const a = document.createElement('a');
+        a.href = Rashnotech;
+        a.download = 'Rashnotech.pdf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+
     return (
         <>
             <main className="flex md:flex-row flex-col-reverse relative p-12 md:p-16 mb-20 text-white">
@@ -22,7 +39,7 @@ const Main = () => {
                 </section>
                 <div className="rounded-full absolute w-28 left-1/2 top-3/4 md:top-2/4">
                     <button className="w-24 absolute rounded-full animate-ping h-24 p-4 bg-pink-500/70"></button>
-                    <button className="absolute rounded-full hover:bg-pink-500/35 bg-pink-500 w-24 h-24 p-4 flex flex-col items-center">
+                    <button onClick={downloadResume} className="absolute rounded-full hover:bg-pink-500/35 bg-pink-500 w-24 h-24 p-4 flex flex-col items-center">
                         <span className="tabler--cloud-download"></span>
                         <span className="font-semibold font-groteck text-2xl text-white">CV</span>
                     </button>

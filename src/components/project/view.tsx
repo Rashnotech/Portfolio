@@ -29,10 +29,10 @@ const View: FC<ProjectProps> = (props) => {
           </h2>
           <p className="font-manrope">
             {props.description}
-            <a href={props.link} className="text-lg font-medium" target="_blank" rel="noopener noreferrer">
-                {props.link}
-            </a>
           </p>
+          <a href={props.link} className="text-lg font-medium" target="_blank" rel="noopener noreferrer">
+            {props.link}
+          </a>
         </div>
       </DragCloseDrawer>
   );

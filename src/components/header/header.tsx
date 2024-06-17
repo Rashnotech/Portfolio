@@ -14,7 +14,7 @@ const Header = () => {
                 <h1 className="font-groteck text-lg md:text-xl ml-6">
                     Rashnotech
                 </h1>
-                <div className="hidden md:flex items-center space-x-4">
+                <div className="hidden md:flex items-center md:space-x-12">
                     <Navbar />
                     <Addons /> 
                 </div>   

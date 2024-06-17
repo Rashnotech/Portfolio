@@ -64,11 +64,10 @@ const Contact = () => {
                         <textarea onChange={handleChange} className="bg-slate-50/10 w-full rounded-2xl focus:outline-none p-4 placeholder:text-white text-sm" placeholder="Enter your message..." name="message" id="" cols={10} rows={4} />
                     </div>
                     <div className="flex items-center justify-center">
-                        <button className="rounded-full hover:bg-pink-600 bg-pink-500 font-medium w-36 text-white text-lg px-4 py-3">
+                        <button className="rounded-full hover:bg-pink-600 bg-pink-500 font-medium w-36 text-white text-lg px-4 py-2">
                             {process && `<i className=''></i>`} Send
                         </button>
                     </div>
-                    
                 </form>
                 <div className="dot-pattern absolute rotate-90 top-1/2 -z-10 h-40 -right-16 md:right-0"></div>
             </section>
