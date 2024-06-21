@@ -1,9 +1,11 @@
 import { FC, useState } from "react";
 import mega from '../../assets/images/mega.gif'
 import drug from '../../assets/images/drug.png';
+import revtax from '../../assets/images/revtax.png';
 import pense from '../../assets/images/pense.png';
 import ncws from '../../assets/images/ncws.png';
 import smart from '../../assets/images/smart.gif';
+import shell from '../../assets/images/shell.jpeg';
 import View from "./view";
 
 
@@ -19,9 +21,9 @@ const data = [{
     id: 2,
     title: 'Rev Tax',
     date: 'March 2024',
-    image: drug,
+    image: revtax,
     description: 'RevTax is a software solution aimed atrevolutionizing revenue collection processes to combat corruption, harassment, and extortion prevalent in manual collection methods. This project leverages modern technologies and innovative approaches to streamline revenue collection, making it easy, simple, and transparent. Built with modern technologies and innovative approaches, RevTax aims to combat corruption, harassment, and extortion prevalent in manual collection methods.', 
-    link: '',
+    link: 'https://github.com/Rashnotech/RevTax',
     open: false
 }, {
     id: 3,
@@ -39,16 +41,25 @@ const data = [{
     description: 'Pense (blog app) is intended to solve the problem of providing individuals and organisations with a platform to create, publish, and manage their written content in an organised and user-friendly manner. The project aims to simplify the process of content creation, publication, and engagement, making it easier for users to reach their target audience.',
     link: 'https://pense-theta.vercel.app/',
     open: false
-}, {
+},{
     id: 5,
+    title: 'Simple shell',
+    date: 'March 2023',
+    image: shell,
+    description: 'This repository contains all you need to know about the simple shell project. This is a school project with the aim of building a command interpreter (shell) withand the objective of knowing how shell works behind the hood.',
+    link: 'https://github.com/Rashnotech/simple_shell',
+    open: false
+},
+ {
+    id: 6,
     title: 'Smart Identity',
     date: 'January 2023',
     image: smart,
     description: '',
-    link: '',
+    link: 'https://github.com/Rashnotech/smart_identity',
     open: false
 }, {
-    id: 6,
+    id: 7,
     title: 'NCWS',
     date: 'April 2022',
     image: ncws,

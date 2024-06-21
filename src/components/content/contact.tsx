@@ -64,7 +64,7 @@ const Contact = () => {
                         <textarea required onChange={handleChange} className="bg-slate-50/10 w-full rounded-2xl focus:outline-none p-4 placeholder:text-white text-sm" placeholder="Enter your message..." name="message" id="" cols={10} rows={4} />
                     </div>
                     <div className="flex items-center justify-center">
-                        <button className="rounded-full hover:bg-pink-600 bg-pink-500 font-medium w-36 text-white text-lg px-4 py-2">
+                        <button disabled={process} className="rounded-full hover:bg-pink-600 bg-pink-500 font-medium w-36 text-white text-sm px-4 py-2">
                             {process ? 'processing...' : 'Send'}
                         </button>
                     </div>

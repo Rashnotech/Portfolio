@@ -23,15 +23,15 @@ const View: FC<ProjectProps> = (props) => {
 
   return (
       <DragCloseDrawer open={props.open} setOpen={props.setOpen}>
-        <div className="mx-auto max-w-2xl space-y-4 text-neutral-400">
+        <div className="mx-auto max-w-2xl max-h-max space-y-4 text-neutral-400">
           <h2 className="text-4xl font-groteck font-bold text-neutral-200">
             {props.title}
           </h2>
           <p className="font-manrope">
             {props.description}
           </p>
-          <a href={props.link} className="text-lg font-medium" target="_blank" rel="noopener noreferrer">
-            {props.link}
+          <a href={props.link} className="text-lg font-medium font-groteck" target="_blank" rel="noopener noreferrer">
+            Visit Site
           </a>
         </div>
       </DragCloseDrawer>
@@ -84,7 +84,7 @@ const DragCloseDrawer: FC<DragCloseDrawerProps> = ({ open, setOpen, children }) 
             transition={{
               ease: "easeInOut",
             }}
-            className="absolute top-1/2 h-[75vh] w-full overflow-hidden rounded-t-3xl bg-neutral-900"
+            className="absolute top-1/2 h-full w-full overflow-hidden rounded-t-3xl bg-neutral-900"
             style={{ y }}
             drag="y"
             dragControls={controls}
