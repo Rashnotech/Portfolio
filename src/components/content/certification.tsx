@@ -9,7 +9,7 @@ const Certification = () => {
                 </h3>
                 <div className="grid grid-cols-1 relative">
                     <article>
-                        <a href="https://intranet.alxswe.com/certificate/MJpTr69eFC">
+                        <a href="https://intranet.alxswe.com/certificates/MJpTr69eFC">
                             <figure className='flex md:flex-row flex-col items-center md:space-x-4'>
                                 <img className='md:w-1/3' src={Cert} alt="certificate of completion" />
                                 <figcaption>
