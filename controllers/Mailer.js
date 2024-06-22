@@ -13,8 +13,8 @@ class Mailer {
          */
         const transporter = nodemailer.createTransport(
             {
-                host: process.env.HOST,
-                port: process.env.POST,
+                host: 'smtp-relay.brevo.com',
+                port: 587,
                 secure: true,
                 auth: {
                     user: process.env.USER,
