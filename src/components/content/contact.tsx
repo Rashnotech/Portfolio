@@ -28,7 +28,7 @@ const Contact = () => {
             body: JSON.stringify(data)
         })
         .then(res => res.json());
-        if (res.status === 'success') {
+        if (res.message) {
             toast({
                 title: res.message,
                 position: 'top-right',
