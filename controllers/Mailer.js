@@ -17,8 +17,8 @@ class Mailer {
                 port: 587,
                 secure: true,
                 auth: {
-                    user: process.env.USER,
-                    pass: process.env.PASS
+                    user: '772a58001@smtp-brevo.com',
+                    pass: 'afmI80WNBghtFdJz'
                 }
             }
         );
