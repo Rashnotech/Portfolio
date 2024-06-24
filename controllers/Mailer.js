@@ -13,12 +13,12 @@ class Mailer {
          */
         const transporter = nodemailer.createTransport(
             {
-                host: 'smtp-relay.brevo.com',
-                port: 587,
+                host: 'smtp.gmail.com',
+                port: 465,
                 secure: true,
                 auth: {
-                    user: '772a58001@smtp-brevo.com',
-                    pass: 'afmI80WNBghtFdJz'
+                    user: 'rev.taxify@gmail.com',
+                    pass: 'onqteyddondjifit'
                 }
             }
         );
